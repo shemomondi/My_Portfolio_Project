@@ -24,13 +24,11 @@ function loadVideos() {
                 iframe.height = '315';
                 iframe.allowFullscreen = true;
                 entry.target.appendChild(iframe);
-                // Set a flag to indicate that the video is loaded
                 entry.target.setAttribute('data-loaded', 'true');
-                // Unobserve the target to avoid unnecessary loads
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.5 }); // Adjust the threshold as needed
+    }, { threshold: 0.1 }); // Adjusted the threshold
 
     // Create placeholders with data attributes for video IDs
     videoIds.forEach(videoId => {
@@ -54,5 +52,30 @@ window.addEventListener('scroll', () => {
     if (distanceToTop < window.innerHeight && distanceToTop > -videosSection.clientHeight && !videosLoaded) {
         loadVideos();
         videosLoaded = true;
+        // Remove the event listener to avoid unnecessary calls
+        window.removeEventListener('scroll', loadVideos);
+    }
+});
+
+// Auth0 configuration
+window.addEventListener('load', () => {
+    const auth0 = new Auth0Client({
+        domain: 'dev-vqvc5eurt0ic27a2.us.auth0.com',
+        clientID: 'OCQL6716MW4rsHFEX6nQRyFtZQuNVuAZ',
+        redirectUri: 'https://shemomondi.github.io/My_Portfolio_Project/callback',
+        // Add other configuration options as needed
+    });
+
+    const loginButton = document.getElementById('loginButton');
+
+    if (loginButton) {
+        loginButton.addEventListener('click', async () => {
+            try {
+                // Call the loginWithRedirect method
+                await auth0.loginWithRedirect();
+            } catch (error) {
+                console.error('Error during login:', error);
+            }
+        });
     }
 });

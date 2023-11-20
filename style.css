@@ -146,6 +146,22 @@ body {
     opacity: 1 !important;
     transition: all 1000 ease-in;
 }
+@media (max-width: 768px) {
+    /* Tabs on mobile */
+   }   .tabs {
+        flex-direction: column;
+        }
+        .tabs .container {
+            width: auto;
+            margin: 0 auto;
+            max-width: 90%;
+            padding: 0;
+            }
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+
 
 /* Additional Styles for other sections (e.g., footer, tables, buttons) */
 .footer {

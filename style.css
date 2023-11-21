@@ -13,6 +13,13 @@ body {
     margin: 0;
     padding: 0;
 }
+.footer{
+    border-radius: 0%;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    
+}
 
 .container {
     background-color: transparent;
@@ -20,6 +27,7 @@ body {
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
+    width: 90%;
 }
 
 /* Header Styles */
@@ -164,12 +172,12 @@ body {
 
 
 /* Additional Styles for other sections (e.g., footer, tables, buttons) */
-.footer {
+/*.footer {
     background: rgb(0, 255, 174);
     color: #fff;
     padding: 2rem 0;
     text-align: center;
-}
+}*/
 .videos {
     background-image: url(R.jpeg);
     background-size: cover;

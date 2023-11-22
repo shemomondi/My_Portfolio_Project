@@ -130,7 +130,7 @@ button {
 
 .video-placeholder {
     box-sizing: border-box;
-    width: calc(50% - 10px);
+    width: calc(100% - 10px);
     /* Adjust the width as needed, and consider margin/padding */
     margin-bottom: 20px;
     /* Adjust the margin as needed */

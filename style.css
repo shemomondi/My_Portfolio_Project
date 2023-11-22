@@ -125,16 +125,18 @@ button {
     /* Center items in the main axis */
     align-items: center;
     /* Center items in the cross axis */
-    padding: 0;
-    margin: 0;
+    padding: 2px;
+    margin: 2px;
     width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .video-placeholder {
     box-sizing: border-box;
     width: calc(33.33% - 10px);
     /* Three videos per row on larger screens */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     /* Adjust the margin as needed */
 }
 
@@ -143,6 +145,8 @@ button {
     /* Adjust styles for smaller screens, e.g., phones */
     .video-placeholder {
         width: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
         /* One video per row on smaller screens */
     }
 }
@@ -160,7 +164,7 @@ button {
 
     /* Landscape styles here */
     .video-placeholder {
-        width: calc(50% - 10px);
+        width: 100%;
         /* Two videos per row in landscape orientation */
     }
 }

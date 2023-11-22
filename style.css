@@ -149,7 +149,23 @@ button {
         /* One videos per row on smaller screens */
     }
 }
+@media only screen and (orientation: portrait) {
 
+    /* Portrait styles here */
+    .video-placeholder {
+        width: 100%;
+        /* One video per row in portrait orientation */
+    }
+}
+
+@media only screen and (orientation: landscape) {
+
+    /* Landscape styles here */
+    .video-placeholder {
+        width: calc(33.33% - 10px);
+        /* Two videos per row in landscape orientation */
+    }
+}
 .showcase-content h1 {
     font-weight: 700;
     font-size: 5.2rem;

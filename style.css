@@ -145,8 +145,8 @@ button {
     }
 
     .video-placeholder {
-        width: calc(50% - 10px);
-        /* Two videos per row on smaller screens */
+        width: 100%;
+        /* One videos per row on smaller screens */
     }
 }
 

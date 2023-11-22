@@ -12,19 +12,29 @@
     </head>
 
     <body>
+        <!-- Popup Container (if you're still using it) -->
+        <div id="popup-container">
+            <div id="popup">
+                <p>This website is under construction. Feel free to explore what's available!</p>
+                <button onclick="closePopup()">Continue</button>
+            </div>
+        </div>
         <header class="showcase">
             <div class="showcase-top">
                 <img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />
-                <!-- Add the login form -->
-                <form id="loginForm">
+                <!-- Login Button -->
+                <button onclick="toggleLoginForm()">Login</button>
+                
+                <!-- Login Form (Initially Hidden) -->
+                <div id="loginForm" style="display:none;">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
-
+                
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
-
-                    <button type="submit">Sign In</button>
-                </form>
+                
+                    <button onclick="login()">Submit</button>
+                </div>
             </div>
             <div class="showcase-content">
                 <h1>See what's next</h1>
@@ -54,6 +64,11 @@
             <div class="container" id="videosContainer">
                 <h2>You are most welcome to my site feel free to scoll down to watch interesting videos of your choice
                 </h2>
+                <!-- Search Bar -->
+                <div id="search-container">
+                    <input type="text" id="searchInput" placeholder="Search videos...">
+                    <button onclick="searchVideos()">Search</button>
+                </div>
                 <!-- Videos will be dynamically added here -->
             </div>
         </section>

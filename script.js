@@ -39,6 +39,20 @@ function loadVideos() {
         observer.observe(placeholder);
     });
 }
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if the user has visited the site before (using localStorage)
+    if (!localStorage.getItem("popupShown")) {
+        // If not, show the popup
+        document.getElementById("popup-container").style.display = "flex";
+    }
+});
+
+function closePopup() {
+    // Close the popup and set a flag in localStorage to not show it again
+    document.getElementById("popup-container").style.display = "none";
+    localStorage.setItem("popupShown", "true");
+}
+
 
 // Flag to prevent multiple video loads
 let videosLoaded = false;
@@ -66,15 +80,32 @@ window.addEventListener('load', () => {
         // Add other configuration options as needed
     });
 
+    // Toggle login form visibility
+    function toggleLoginForm() {
+        const loginForm = document.getElementById('loginForm');
+        loginForm.style.display = loginForm.style.display === 'none' ? 'block' : 'none';
+    }
+
     const loginButton = document.getElementById('loginButton');
 
     if (loginButton) {
         loginButton.addEventListener('click', async () => {
-            try {
-                // Call the loginWithRedirect method
-                await auth0.loginWithRedirect();
-            } catch (error) {
-                console.error('Error during login:', error);
+            toggleLoginForm();
+        });
+    }
+
+    // Add login logic here
+    const submitButton = document.getElementById('submitButton');
+    if (submitButton) {
+        submitButton.addEventListener('click', async () => {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Replace with your authentication logic
+            if (username === 'yourUsername' && password === 'yourPassword') {
+                alert('Login successful!');
+            } else {
+                alert('Login failed. Please check your credentials.');
             }
         });
     }

@@ -121,17 +121,19 @@ button {
 #videosContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0px;
-    margin: 0px;
+    justify-content: center;
+    /* Center items in the main axis */
+    align-items: center;
+    /* Center items in the cross axis */
+    padding: 0;
+    margin: 0;
     width: 100%;
-    /* Adjust as needed */
 }
 
 .video-placeholder {
     box-sizing: border-box;
-    width: calc(100% - 10px);
-    /* Adjust the width as needed, and consider margin/padding */
+    width: calc(33.33% - 10px);
+    /* Three videos per row on larger screens */
     margin-bottom: 20px;
     /* Adjust the margin as needed */
 }
@@ -139,16 +141,12 @@ button {
 @media only screen and (max-width: 600px) {
 
     /* Adjust styles for smaller screens, e.g., phones */
-    #videosContainer {
-        justify-content: center;
-        /* Center items on smaller screens */
-    }
-
     .video-placeholder {
         width: 100%;
-        /* One videos per row on smaller screens */
+        /* One video per row on smaller screens */
     }
 }
+
 @media only screen and (orientation: portrait) {
 
     /* Portrait styles here */
@@ -162,7 +160,7 @@ button {
 
     /* Landscape styles here */
     .video-placeholder {
-        width: calc(33.33% - 10px);
+        width: calc(50% - 10px);
         /* Two videos per row in landscape orientation */
     }
 }

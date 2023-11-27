@@ -8,6 +8,9 @@ function loadVideos() {
         'sufJ1VhZK24',
         'UpA95Zaoomg',
         'tC1X9EJlqAw',
+       //'JrExz1NYn8o',
+        'OTqRhVTE0Sk',
+        'pabciQ-MJD0',
         // Add more video IDs as needed
     ];
 
@@ -52,6 +55,8 @@ function closePopup() {
     document.getElementById("popup-container").style.display = "none";
     localStorage.setItem("popupShown", "true");
 }
+
+
 
 
 // Flag to prevent multiple video loads

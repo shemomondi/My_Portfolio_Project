@@ -130,7 +130,7 @@ button {
     width: 100%;
     margin-left: 3%;
     margin-right: 3%;
-    height: 100%;
+    
 }
 
 .video-placeholder {
@@ -148,7 +148,7 @@ button {
         width: 100%;
         margin-left: 3%;
         margin-right: 3%;
-        height: 100%;
+        
         /* One video per row on smaller screens */
     }
 }

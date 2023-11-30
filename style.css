@@ -132,40 +132,39 @@ button {
     text-align: center;
     margin-top: 9rem;
 }
-#videosContainer{
+#videosContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /* Center items in the main axis */
-    align-items: center;
-    /* Center items in the cross axis */
+    justify-content: space-around;
     box-sizing: border-box;
-    border: 1px solid black none;
     margin: 10px;
     padding: 20px;
     position: relative;
     background-color: none;
-    width: 100%;
     border-radius: 20px;
+    width: 100%;
+    border: solid black;
+}
+button:hover{
+    color: white !important;
+
     
 }
-#videosContainer iframe{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* Center items in the main axis */
-    align-items: center;
-    /* Center items in the cross axis */
+
+#videosContainer iframe {
     box-sizing: border-box;
     border: 1px solid black;
     margin: 10px;
     padding: 5px;
     position: relative;
     background-color: aquamarine;
-    width: 100%;
+    width: calc(33.33% - 20px);
+    /* Three videos per row */
     border-radius: 20px;
-    height: 450px;
-
+    height: 250px;
+}
+.footer-content p{
+    color: #090909;
 }
 
 
@@ -173,7 +172,7 @@ button {
     box-sizing: border-box;
     width: calc(33.33% - 10px);
     /* Three videos per row on larger screens */
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     /* Adjust the margin as needed */
 }
 
@@ -204,6 +203,16 @@ button {
     .video-placeholder {
         width: 100%;
         /* Two videos per row in landscape orientation */
+    }
+}
+#videosContainer,
+#videosContainer iframe {
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+    #videosContainer iframe {
+        width: 100%;
+        /* Adjust for smaller screens */
     }
 }
 .showcase-content h1 {

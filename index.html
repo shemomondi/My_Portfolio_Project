@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-            integrity="sha512-+dPDqpOsSD1J2xFv/j5zZPpWhMZJPEzFjqF8tLXMJFh3F8T+arBqU9Jx1o6sOoEi5MHU4Cd3r3eXUzJLpeLoFQ=="
+          
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>shem's_movie_site</title>
     </head>
@@ -23,21 +23,24 @@
             <div class="showcase-top">
                 <img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />
                 <!-- Login Button -->
-                <button onclick="toggleLoginForm()">Login</button>
-                
-                <!-- Login Form (Initially Hidden) -->
-                <div id="loginForm" style="display:none;">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                
-                    <button onclick="login()">Submit</button>
+            <button id="loginButton">Login</button>
+            <button id="logoutButton">Logout</button>
+            
+            <!-- Login Form (Initially Hidden) -->
+            <div id="loginForm" style="display:none;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            
+                <button id="submitButton">Submit</button>
+            </div>
+
                 </div>
             </div>
             <div class="showcase-content">
-                <h1 style="background-color: transparent;color: rgb(61, 61, 134);"> Hello welcom...! See what's next</h1>
+                <h1 style="background-color: transparent;color: rgb(165, 165, 212);"> Hello welcom...! See what's next</h1>
                 <p style="color: rgb(49, 49, 142);"><em>Watch anywhere. Cancel Anytime</em></p>
                 <a href="#" class="btn btn-xl">Watch Free For 30 Days <i class="fas fa-chevron-right btn-icon"></i></a>
             </div>
@@ -60,22 +63,25 @@
         </section>
 
         <!-- New section for videos -->
-        <section class="videos" id="videosSection">
-            <div class="container" id="videosContainer">
-                <h3 style="color:goldenrod;"><em>You are most welcome to my site feel free to scoll down to watch interesting videos of your
-                choice</em></h3>
-                <div>
-                    <a href="https://score808ball.com/">sport live</a>
+        <div style="background-color: blue;" class="video">
+            <section class="videos" id="videosSection">
+                <div class="container" id="videosContainer">
+                    <h3 style="color:goldenrod;"><em>You are most welcome to my site feel free to scoll down to watch interesting
+                            videos of your
+                            choice</em></h3>
+                    <div>
+                        <a style="color: black;" href="https://score808tv.com/" target="_blank">Watch Sports live</a>
+                    </div>
+                    <!-- Search Bar -->
+                    <div id="search-container">
+                        <input type="text" id="searchInput" placeholder="Search videos...">
+                        <button onclick="searchVideos()">Search</button>
+                    </div>
+                    <!-- Videos will be dynamically added here -->
                 </div>
-                <!-- Search Bar -->
-                <div id="search-container">
-                    <input type="text" id="searchInput" placeholder="Search videos...">
-                    <button onclick="searchVideos()">Search</button>
-                </div>                          
-                <!-- Videos will be dynamically added here -->
-            </div>
-
-        </section>
+            
+            </section>
+        </div>
         
 
         <!-- Footer Section -->
@@ -111,10 +117,11 @@
                 <p>© 2023 Shem's Tech Company. All rights reserved. Unauthorized use prohibited. Privacy Policy | Terms of
                     Service</p>
         
-                <p>Join our community of enthusiasts and explorers. Together, we celebrate passion, creativity, and a shared
-                    love for technology.</p>
+               <!-- <p>Join our community of enthusiasts and explorers. Together, we celebrate passion, creativity, and a shared
+                    love for technology.</p> -->
             </div>
         </footer>
+        
 
         <script src="https://cdn.auth0.com/js/auth0/9.11/auth0.min.js"></script>
         <script src="script.js"></script>

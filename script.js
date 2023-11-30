@@ -2,7 +2,7 @@
 function loadVideos() {
     const videoIds = [
         'XahEWKh1FIE',
-        'nNdOyOY65WI',
+       // 'nNdOyOY65WI',
         '2s0d80XaGWU',
         'RODs8Fkweww',
         'sufJ1VhZK24',
@@ -76,42 +76,52 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Auth0 configuration
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', function () {
     const auth0 = new Auth0Client({
         domain: 'dev-vqvc5eurt0ic27a2.us.auth0.com',
-        clientID: 'OCQL6716MW4rsHFEX6nQRyFtZQuNVuAZ',
+        clientID: 'rlI0px3wJ1WggOCVRDSSN5LSWED571iS',
         redirectUri: 'https://shemomondi.github.io/My_Portfolio_Project/callback',
-        // Add other configuration options as needed
     });
 
-    // Toggle login form visibility
+    const loginButton = document.getElementById('loginButton');
+    const logoutButton = document.getElementById('logoutButton');
+    const submitButton = document.getElementById('submitButton');
+    const loginForm = document.getElementById('loginForm');
+
+    loginButton.addEventListener('click', function () {
+        toggleLoginForm();
+    });
+
+    submitButton.addEventListener('click', function () {
+        login();
+    });
+
+    logoutButton.addEventListener('click', function () {
+        logout();
+    });
+
     function toggleLoginForm() {
-        const loginForm = document.getElementById('loginForm');
         loginForm.style.display = loginForm.style.display === 'none' ? 'block' : 'none';
     }
 
-    const loginButton = document.getElementById('loginButton');
+    function login() {
+        auth0.loginWithRedirect();
+    }
 
-    if (loginButton) {
-        loginButton.addEventListener('click', async () => {
-            toggleLoginForm();
+    function logout() {
+        auth0.logout();
+    }
+
+    function handleAuthentication() {
+        auth0.handleRedirectCallback().then(() => {
+            // Now you can get the user's profile, etc.
+            auth0.getUser().then((user) => {
+                console.log('User profile:', user);
+            });
         });
     }
 
-    // Add login logic here
-    const submitButton = document.getElementById('submitButton');
-    if (submitButton) {
-        submitButton.addEventListener('click', async () => {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            // Replace with your authentication logic
-            if (username === 'yourUsername' && password === 'yourPassword') {
-                alert('Login successful!');
-            } else {
-                alert('Login failed. Please check your credentials.');
-            }
-        });
-    }
+    // Handle authentication on page load
+    window.addEventListener('load', handleAuthentication);
 });
+

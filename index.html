@@ -21,7 +21,22 @@
         </div>
         <header class="showcase">
             <div class="showcase-top">
-                <img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />
+                <div class="containers">
+                    <h1>
+                        <span>W</span>
+                        <span>e</span>
+                        <span>l</span>
+                        <span>c</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>e</span>
+                        <span>&nbsp;</span>
+                        <span>H</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>e</span>
+                    </h1>
+                </div>
                 <!-- Login Button -->
             <button id="loginButton">Login</button>
             <button id="logoutButton">Logout</button>
@@ -40,9 +55,10 @@
                 </div>
             </div>
             <div class="showcase-content">
-                <h1 style="background-color: transparent;color: rgb(165, 165, 212);"> Hello welcom...! See what's next</h1>
-                <p style="color: rgb(49, 49, 142);"><em>Watch anywhere. Cancel Anytime</em></p>
-                <a href="#" class="btn btn-xl">Watch Free For 30 Days <i class="fas fa-chevron-right btn-icon"></i></a>
+                <h1 style="background-color: transparent;color: rgb(165, 165, 212);"> <span>Hello welcom...! See what's next</span></h1>
+                <h3><span><em>Watch anywhere. Cancel Anytime</em></span></h3>
+               <button style="display: flex;text-align: center;
+               text-decoration: none;text-shadow: 2px;border-radius: 10px;border: 1px black;background-color:peru;"><a href="#" class="btn btn-xl">Watch Free For 30 Days <i class="fas fa-chevron-right btn-icon"></i></a></button>
             </div>
         </header>
 
@@ -66,7 +82,10 @@
         <div style="background-color: blue;" class="video">
             <section class="videos" id="videosSection">
                 <div class="container" id="videosContainer">
-                    <h3 style="color:goldenrod;"><em>You are most welcome to my site feel free to scoll down to watch interesting
+                                <!-- Videos Grid -->
+                                <div class="videos-grid" id="videosGrid"></div>
+                    <h3 style="color:goldenrod;"><em>You are most welcome to my site feel free to scroll down to watch
+                            interesting
                             videos of your
                             choice</em></h3>
                     <div>
@@ -77,11 +96,10 @@
                         <input type="text" id="searchInput" placeholder="Search videos...">
                         <button onclick="searchVideos()">Search</button>
                     </div>
-                    <!-- Videos will be dynamically added here -->
                 </div>
-            
             </section>
         </div>
+
         
 
         <!-- Footer Section -->

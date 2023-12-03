@@ -1,8 +1,11 @@
 /* Global Styles */
+
 :root {
     --primary-color: rgb(69, 184, 31);
     --dark-color: #141414;
     --light-color: #f4f4f4;
+    padding: 0%;
+    margin: 0%;
 }
 
 body {
@@ -10,14 +13,13 @@ body {
     -webkit-font-smoothing: antialiased;
     background: #000;
     color: #5c3535;
-    margin: 20px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     color: #007BFF;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+    max-width: auto;
     overflow-x: hidden;
-    margin-top: auto;
     margin-bottom: auto;
     
 }
@@ -77,6 +79,8 @@ button{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
 }
 .button1{
     background: rgb(69, 185, 121);
@@ -86,10 +90,12 @@ button{
     cursor:pointer;
     margin-left: 300px;
     margin-bottom: auto;
-    margin-top:10px;
+    margin-top:40px;
     text-transform: lowercase;
     transition: all .3s ease-in-out;
     text-decoration: none;
+    left: 600px;
+    right: 500px;
 }
 .button1:hover{
     transform: scale(.97);
@@ -114,6 +120,8 @@ button{
     height: 100vh;
     position: relative;
     background: url(https://wallpaperaccess.com/full/1512237.jpg) no-repeat center center/cover;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .showcase::after {
@@ -154,23 +162,28 @@ button{
     position: relative;
     z-index: 3;
     width: 65%;
-    margin: auto;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom:500px;
+    margin-top: auto;
+    margin-bottom:auto;
     background: transparent;
     padding: 10px;
-    margin-left: 80px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-text-stroke: 1px blue;
     height: 150px;
-} 
+    
+}
 .showcase-content h1{
     margin-bottom: auto;
+    font-size: 3rem;
+}
+.showcase-content h3 span{
+    font-size: 1.7rem;
 }
 .showcase-content h1:hover {
     color: rgb(29, 29, 173);

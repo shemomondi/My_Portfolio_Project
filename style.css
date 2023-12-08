@@ -248,14 +248,14 @@ h1 span:has(~span:hover) {
     padding: 5px;
     position: relative;
     background-color: aquamarine;
-    width: 300px;
+    width: 500px;
     /* Three videos per row */
     border-radius: 20px;
     height: 250px;
     object-fit: cover;
     z-index: 9999;
     transition: all .3s ease-in-out;
-    max-width: 500px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -459,7 +459,7 @@ button {
     }
 
     .showcase-content h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     /* Adjustments for smaller screens for tables and buttons */
@@ -482,7 +482,7 @@ button {
     }
 
     .showcase-content h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /* Adjustments for even smaller screens for tables and buttons */

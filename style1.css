@@ -1,0 +1,27 @@
+* {
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    max-width: 2800px;
+    max-height: 9vh;
+}
+
+.welcome-container {
+    padding: 10px;
+    margin: 20px;
+    width: 100%;
+    max-width: 2800px;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+object-fit: fill;
+    height: 79vh;
+    width: 1900px;
+    background: gold;
+    padding: auto;
+    margin: auto;
+}

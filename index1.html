@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Movie Website</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+
+            section {
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+                color: #333;
+            }
+
+            p {
+                color: #666;
+            }
+
+            .featured-movies {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .movie-card {
+                width: 30%;
+                margin: 10px;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            }
+
+            .movie-card img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Your Movie Website</h1>
+            <p>Discover the latest and greatest in cinema!</p>
+        </header>
+
+        <section>
+            <h2>Featured Movies</h2>
+
+            <div class="featured-movies">
+                <div class="movie-card">
+                    <img src="movie1.jpg" alt="Movie 1">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of Movie 1.</p>
+                </div>
+
+                <div class="movie-card">
+                    <img src="movie2.jpg" alt="Movie 2">
+                    <h3>Movie Title 2</h3>
+                    <p>Description of Movie 2.</p>
+                </div>
+
+                <div class="movie-card">
+                    <img src="movie3.jpg" alt="Movie 3">
+                    <h3>Movie Title 3</h3>
+                    <p>Description of Movie 3.</p>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>

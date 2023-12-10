@@ -248,7 +248,7 @@ h1 span:has(~span:hover) {
     padding: 5px;
     position: relative;
     background-color: aquamarine;
-    width: 500px;
+    width: 450px;
     /* Three videos per row */
     border-radius: 20px;
     height: 250px;

@@ -23,29 +23,6 @@ body {
     margin-bottom: auto;
     
 }
-footer {
-    border-radius: 20px;
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 30px;
-    border: 1px solid yellowgreen;
-}
-.footer-content{
-    background-color:rgb(0, 0, 0);
-    transition: all 0.2s ease-in-out;
-    min-height: 50px;
-    color: #f2f2f2;
-}
-.footer-content a{
-    color:blue !important;
-
-}
-.footer-content {
-    color: #007BFF;
-}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -168,7 +145,7 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: auto;
+    margin-top: 50px;
     margin-bottom:auto;
     background: transparent;
     padding: 10px;
@@ -212,143 +189,6 @@ h1 span:hover {
 h1 span:has(~span:hover) {
     color: white;
 }
-#videosContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 10px;
-    position: relative;
-    background-color: none;
-    border-radius: 20px;
-    width: 100%;
-    border: solid yellowgreen;
-    overflow: hidden;
-    height: 100%;
-    max-height: 150%;
-    min-width: 450px;
-    max-width: 960px;
-    transition: all .3s ease-in-out;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-#videosContainer::-webkit-scrollbar{
-    display: flex;
-}
-
-#videosContainer iframe {
-    box-sizing: border-box;
-    border: 1px solid black;
-    margin: 10px;
-    padding: 5px;
-    position: relative;
-    background-color: aquamarine;
-    width: 450px;
-    /* Three videos per row */
-    border-radius: 20px;
-    height: 250px;
-    object-fit: cover;
-    z-index: 9999;
-    transition: all .3s ease-in-out;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.footer-content p{
-    color: white;
-}
-
-
-
-.video-placeholder {
-    box-sizing: border-box;
-    width: 100%;
-    /* Three videos per row on larger screens */
-    margin-bottom: 40px;
-    /* Adjust the margin as needed */
-}
-
-@media only screen and (max-width: 600px) {
-
-    /* Adjust styles for smaller screens, e.g., phones */
-    .video-placeholder {
-        width: 100%;
-        margin-left: 3%;
-        margin-right: 3%;
-        
-        /* One video per row on smaller screens */
-    }
-}
-
-@media only screen and (orientation: portrait) {
-
-    /* Portrait styles here */
-    .video-placeholder {
-        width: 100%;
-        /* One video per row in portrait orientation */
-    }
-}
-
-@media only screen and (orientation: landscape) {
-
-    /* Landscape styles here */
-    .video-placeholder {
-        width: 100%;
-        /* Two videos per row in landscape orientation */
-    }
-}
-/* Tabs Styles */
-/*.tabs {
-    background-image: url(R.jpe);
-    padding-top: 1rem;
-    border-bottom: 3px solid #3d3d3d;
-    border-right: none;
-}
-
-.tabs .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.tabs p {
-    font-size: 1.2rem;
-    padding-top: 0.5rem;
-}
-
-.tabs .container>div {
-    padding: 1.5rem 0;
-}
-
-.tabs .container>div:hover {
-    color: #fff;
-    cursor: pointer;
-}*/
-
-.tab-border {
-    border-bottom: var(--primary-color) 4px solid;
-}
-
-/* Tab Content Styles 
-.tab-content {
-    padding: 3rem 0;
-    background: #5d5050;
-    color: #fff;
-}*/
-
-/* Hide initial content */
-.tab-content-item {
-    display: none;
-    opacity: 0;
-}
 #search-container{
     display: flex;
     width: 100%;
@@ -357,51 +197,6 @@ h1 span:has(~span:hover) {
     position: relative;
     margin-bottom: 20px;
     
-}
-.show {
-    display: block !important;
-    opacity: 1 !important;
-    transition: all 1000 ease-in;
-}
-@media (max-width: 768px) {
-    /* Tabs on mobile */
-   }   .tabs {
-        flex-direction: column;
-        }
-        .tabs .container {
-            width: auto;
-            margin: 0 auto;
-            max-width: 90%;
-            padding: 0;
-            }
-                        img {
-                            max-width: 100%;
-                            height: auto;
-                        }
-
-
-/* Additional Styles for other sections (e.g., footer, tables, buttons) */
-/*.footer {
-    background: rgb(0, 255, 174);
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
-}*/
-.videos {
-    background-image: url(R.jpeg);
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    position: relative;
-    max-width: 1400px;
-    min-height: 520px;
-    
-}
-.hide-sm {
-    text-align: right;
-
-
 }
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -413,35 +208,6 @@ h2 {
     color: rgb(190, 190, 10);
     background-color: green;
 }
-
-.footer-cols {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-}
-
-.footer-cols div {
-    flex: 1;
-}
-
-/* Placeholder styles for tables and buttons */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th,
-td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
 button {
     background: var(--primary-color);
     color: #fff;
@@ -451,60 +217,12 @@ button {
 }
 
 /* Media Queries */
-@media (max-width: 960px) {
-
-    /* Adjustments for smaller screens */
-    .container {
-        max-width: 80%;
-    }
-
-    .showcase-content h1 {
-        font-size: 3rem;
-    }
-
-    /* Adjustments for smaller screens for tables and buttons */
-    table,
-    th,
-    td {
-        font-size: 0.9rem;
-    }
-
-    button {
-        padding: 0.8rem 1.5rem;
-    }
-}
-
-@media (max-width: 700px) {
-
-    /* Adjustments for even smaller screens */
-    .container {
-        max-width: 100%;
-    }
-
-    .showcase-content h1 {
-        font-size: 2rem;
-    }
-
-    /* Adjustments for even smaller screens for tables and buttons */
-    table,
-    th,
-    td {
-        font-size: 0.8rem;
-    }
-
-    button {
-        padding: 0.7rem 1.2rem;
-    }
-}
-
-@media (max-height: 600px) {
-
-    /* Adjustments for smaller heights */
-    .showcase {
-        height: 80vh;
-    }
-
-    .showcase-content h1 {
-        margin-top: 6rem;
-    }
-}
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+    
+            p {
+                font-size: 0.8em;
+            }
+        }

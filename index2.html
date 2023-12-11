@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>shem's~movie~site</title>
+    </head>
+
+    <body>
+        <!-- Popup Container (if you're still using it) -->
+        <div id="popup-container">
+            <div style="background-color: blue;" id="popup">
+                <p style="color: aliceblue;">This website is still under construction. <br>Shem is still working hard to make things better, but feel free to explore what's available...!</p>
+                <button onclick="closePopup()">Continue</button>
+            </div>
+        </div>
+        <!-- Main Content Area -->
+        <section class="main-content">
+        <header class="showcase">
+            <div class="showcase-top">
+                <div class="containers">
+                    <h1>
+                        <span>B</span>
+                        <span>e</span>
+                        <span>s</span>
+                        <span>t</span>
+                        <span>&nbsp;</span>
+                        <span>M</span>
+                        <span>o</span>
+                        <span>v</span>
+                        <span>i</span>
+                        <span>e</span>
+                        <span>&nbsp;</span>
+                        <span>S</span>
+                        <span>i</span>
+                        <span>t</span>
+                        <span>e</span>
+                    </h1>
+                </div>
+                <!-- Login Button -->
+            <button id="loginButton">Login</button>
+            <button id="logoutButton">Logout</button>     
+            <!-- Login Form (Initially Hidden) -->
+            <div id="loginForm" style="display:none;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>    
+                <button id="submitButton">Submit</button>
+            </div>
+                </div>
+            <section>
+                <div class="showcase-content">
+                    <h1 style="background-color: transparent;color: rgb(165, 165, 212);"> <span>Hello welcom...! See what's next</span>
+                    </h1>
+                    <h3><span><em>Watch anywhere. Cancel Anytime</em></span></h3>
+                    <button style="display: flex;text-align: center;
+                               text-decoration: none;text-shadow: 2px;border-radius: 10px;border: 1px black;background-color:peru;"><a
+                            href="#" class="btn btn-xl">Watch Free For 30 Days <i
+                                class="fas fa-chevron-right btn-icon"></i></a></button>
+                </div>
+            </section>
+            </div>
+       </header>
+
+    <!--   <section class="tabs">
+             <div class="container">
+                <div id="tab-1" class="tab-item tab-border">
+                 <i class="fas fa-door-open fa-3x"></i>
+                  <p class="hide-sm">Cancel at any time</p>
+                </div> -->
+                <!-- The rest of your tab items -->
+            </div>
+        </section>
+
+       <!--<section class="tab-content">
+            <div class="container">
+                <!-- The rest of your tab content items 
+            </div>
+        </section>-->
+        <!-- New section for videos -->
+        <section>
+        <div style="background-color: blue;" class="video">
+            <section class="videos" id="videosSection">
+                <div class="container" id="videosContainer">
+                                <!-- Videos Grid -->
+                                <div class="videos-grid" id="videosGrid"></div>
+                    <h3 style="color:goldenrod;"><em>You are most welcome to my site feel free to scroll down to watch
+                            interesting
+                            videos of your
+                            choice</em></h3>
+                    <button class="button1"><div>
+                        <a style="color: black;" href="https://score808tv.com/" target="_blank">Watch Sports live</a>
+                    </div></button>
+                    <!-- Search Bar -->
+                    <div id="search-container">
+                        <input type="text" id="searchInput" placeholder="Search videos...">
+                        <button onclick="searchVideos()">Search</button>
+                    </div>
+                </div>
+            </section>
+            </section>
+        </div>        
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Explore, Connect, Enjoy. Your journey with Shem's Tech Company begins here. Reach out and stay tuned for more
+                    exciting updates.</p>
+        
+                <p>Have a question or just want to say hello? We're here for you! Contact us at <a
+                        href="mailto:shemomondi746@gmail.com">shemomondi746@gmail.com</a> or give us a ring at <a
+                        href="tel:+254112675636">+254 112 675 636</a>.</p>
+        
+                <p>Let's stay connected! Follow us on <a href="https://www.facebook.com/shem_shemkoh"
+                        target="_blank">Facebook</a> and <a href="https://www.instagram.com/Omosh_shemkoh/"
+                        target="_blank">Instagram</a> for the latest news, behind-the-scenes, and exclusive content. Join our
+                    online community!</p>
+        
+                <p>Stay in the loop! Subscribe to our newsletter for exclusive offers, sneak peeks, and insider updates. Your
+                    inbox just got a whole lot more interesting.</p>
+        
+                <p>Need assistance? Our dedicated support team is ready to help. Reach out to us anytime at <a
+                        href="mailto:shemsupport.com">shemsupport.com</a> or visit our Help Center for FAQs.</p>
+        
+                <p>Committed to excellence, driven by innovation. Learn more about our values and mission. Your trust is our
+                    motivation.</p>
+        
+                <p>Empowering your journey, one step at a time. Thank you for being part of our story. Together, we create
+                    something extraordinary.</p>
+        
+                <p>Your opinion matters! Share your feedback and suggestions with us. We're always looking for ways to enhance
+                    your experience.</p>
+        
+                <p>© 2023 Shem's Tech Company. All rights reserved. Unauthorized use prohibited. Privacy Policy | Terms of
+                    Service</p>
+        </div>
+        </footer>
+        <script src="https://cdn.auth0.com/js/auth0/9.11/auth0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
